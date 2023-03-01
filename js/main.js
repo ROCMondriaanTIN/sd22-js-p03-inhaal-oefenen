@@ -14,6 +14,18 @@ const pizzaNameInputElement = document.querySelector('.pizza-name');
 let pizzaArray = [];
 let toppingInputArray = [];
 
+
+const pizza = makePizza('Pizza Shoarma', ['Cheese', 'Tomato sauce', 'Shoarma']);
+console.log(pizza);
+
+const pizzaJson = JSON.stringify(pizza);
+
+console.log(pizzaJson);
+
+const pizza1 = JSON.parse(pizzaJson);
+
+console.log(pizza1);
+
 addPizzaButton.addEventListener('click', function(){
     console.log('Add pizza button clicked');
     console.log(pizzaNameInputElement.value);
